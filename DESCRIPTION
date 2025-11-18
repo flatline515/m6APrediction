@@ -1,0 +1,15 @@
+Imports:
+  randomForest
+Version: 1.0.0
+Depends: R (>= 3.5.0)
+Title: Predict m6A site to be Positive or Negative using random forest
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Authors@R: 
+    person("Yuxiang", "Jia", , "yuxiang.jia23@student.xjtlu.edu.cn", role = c("aut", "cre"))
+Package: m6APrediction
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+URL: https://github.com/flatline515/m6APrediction
+BugReports: https://github.com/flatline515/m6APrediction/issues
