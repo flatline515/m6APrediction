@@ -38,7 +38,9 @@ The **m6APrediction** package provides three core functions designed to streamli
 
     **Example Use:**
 
-    `r dna_features <- dna_encoding("ATACT")`
+    ```{r}
+    dna_features <- dna_encoding("ATACT")
+    ```
 
 2.  **prediction_single()**
 
@@ -95,22 +97,29 @@ The **m6APrediction** package provides three core functions designed to streamli
     head(results)
     ```
 
-    ## **Evaluation of Random Forest Model:** ![](images/clipboard-2896350300.png)
+    ## **Evaluation of Random Forest Model:**
 
-![](images/clipboard-3839940850.png)
+    ![](images/000014.png)![](images/000012-01.png)
 
-=========================================
+## Install:
 
-## Install
-
-To install m6APrediction from Github, use the following code inside the Rstudio console:
+To install m6APrediction from Github, copy-and-paste the following code inside the **R console**:
 
 ``` r
-if (!requireNamespace("devtools", quietly = TRUE))
-  install.packages("devtools")
+# Install from GitHub
+remotes::install_github("flatline515/m6APrediction")
+```
 
-if (!requireNamespace("randomForest", quietly = TRUE))
-  install.packages("randomForest")
+## Load Example Data:
 
-devtools::install_github("Yuxiang Jia/m6APrediction")
+you can also load default random forest model (rf_model) and example data (example_df) using the code below:
+
+```{r}
+# Example: Load bundled example model
+rf_model <- readRDS(system.file("extdata", "rf_fit.rds",
+                                package = "m6APrediction"))
+# Load example feature dataframe
+example_df <- read.csv(
+  system.file("extdata", "m6A_input_example.csv", package = "m6APrediction")
+)
 ```
