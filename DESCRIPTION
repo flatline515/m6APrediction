@@ -3,7 +3,7 @@ Imports:
 Version: 1.0.0
 Depends: R (>= 3.5.0)
 Title: Predict m6A site to be Positive or Negative using random forest
-Description: What the package does (one paragraph).
+Description: m6APrediction is an R package designed to predict N6-methyladenosine (m6A) modification sites in RNA sequences using pre-trained random forest models. It provides functions for encoding k-mer DNA/RNA sequences into one-hot representations (dna_encoding()), as well as for predicting m6A modification probabilities and categorical statuses for single (prediction_single()) or multiple sequences (prediction_multiple()). The package includes example datasets and a bundled trained model, enabling users to quickly test predictions and integrate m6A analysis into their RNA bioinformatics workflows.
 License: MIT + file LICENSE
 Authors@R: 
     person("Yuxiang", "Jia", , "yuxiang.jia23@student.xjtlu.edu.cn", role = c("aut", "cre"))
